@@ -5,7 +5,7 @@
 </h3>
 
 <ul>
-  <%=@category.posts.each do |p|%>
+  <%@category.posts.each do |p|%>
   <li><%= link_to p.title, post_path(p)%>
   </li>
   <%end%>
